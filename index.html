@@ -17,13 +17,17 @@
   <li><a href="#skills">Skills</a></li>
   <li><a href="#about">Projects</a></li>
   <li><a href="#resume">Resume</a></li>
-  <li class="rightAlign">Invert Colors!</li>
+  <li class="rightAlign"><button onclick="toggleInvert()">Invert Colors!</button></li>
 </ul>
 </div> 
 <footer class="container-fluid text-center">
   <p>© 2025 Kayli Gerka</p>
 </footer>
   
-
+<script>
+  function toggleInvert() {
+    document.body.classList.toggle('inverted');
+  }
+</script>
 </body>
 </html>

@@ -15,14 +15,12 @@ ul {
     display: flex;  
     overflow: hidden;
     border: 0 solid white;
-    background-color: #b9bec0;
+    background-color: #ffeac1;
   }
-li {
-   
-}
+
 li a {
     display: block;
-    color: #666;
+    color: #565454;
     text-align: center;
     padding: 25px 20px;
     text-decoration: none;
@@ -31,25 +29,78 @@ li a {
     font-style: bold;
 }
 li a:hover:not(.active) {
-    background-color: #9b9f9f;
+    color: #81bfe3 ;
 }
 li a.active {
-    color: white;
+    color: rgb(17, 16, 16);
     background-color: #ffe18f;
 } 
 .rightAlign {
     margin-left: auto;
     padding: 25px 20px;
-    text-align: right;
-    padding: 25px;
+    text-align: center;
+    padding: 15px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 } 
-body {
-    background-color: whitesmoke;
+.rightAlign button {
+    font-size: 18px;
+    padding: 10px 10px;
+    background-color: #fad87b;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.rightAlign button:hover {
+    background-color: #242222;
+    color: #ffe18f;
+}
+/* ---------------- inverted --------------- */
+body.inverted .rightAlign button {
+    background-color: #a8d9f6;
+    color: #2a2a2a; 
+}
+
+body.inverted .rightAlign button:hover {
+    background-color: #2a2a2a;
+    color: #a8d9f6;
+}
+
+body.inverted {
+    background-color: #242222;
+    color: white;
+}
+
+body.inverted li a.active {
+    color: #2a2a2a;
+    background-color: #a8d9f6;
+}
+
+body.inverted ul {
+    background-color: #181717;
+}
+body.inverted li a {
+    color: #f8f8f8;
+}
+body.inverted li a:hover:not(.active) {
+    color: #ffe18f;
+    background-color: #181717;
+}
+
+body.inverted footer {
+    background-color: #181717;
+}
+
+/* ---------------- end inverted ------------ */
+
+body {
+    background-color: rgb(255, 237, 237);
+    color: black;
+}
+
 footer {
-    background-color: #b9bec0;
+    background-color: #ffeac1;
     text-align: center;
     padding: 30px;
     width: 100%; 
