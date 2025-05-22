@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+  
+.wrapper {
+    min-height: 100%;
+    padding-bottom: 200px; /* Same as footer height */
+    box-sizing: border-box;
+}
+  
+footer {
+    background-color: #e0fbfc;
+    padding: 25px;
+    height: 200px;
+    margin-top: -200px; /* Pull footer up into space created by padding */
+    clear: both;
+    position: relative;
+    color: #444545;
+    text-align: center;
+    line-height: 150px;
+}
+  
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #444545;
+}
+  
+.jumbotron {
+    background-color: #e0fbfc;
+    padding: 60px 25px;
+    color: #444545;
+}
+  
+.column-border {
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
