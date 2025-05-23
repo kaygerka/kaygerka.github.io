@@ -15,12 +15,12 @@ ul {
     display: flex;  
     overflow: hidden;
     border: 0 solid white;
-    background-color: #ffeac1;
+    background-color: #caddf8;
   }
 
 li a {
     display: block;
-    color: #565454;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 25px 20px;
     text-decoration: none;
@@ -29,15 +29,15 @@ li a {
     font-style: bold;
 }
 li a:hover:not(.active) {
-    color: #81bfe3 ;
+    color: #fa9907 ;
 }
 li a.active {
-    color: rgb(17, 16, 16);
-    background-color: #ffe18f;
+    color: rgb(255, 255, 255);
+    background-color: #7ba7c9;
 } 
 .rightAlign {
     margin-left: auto;
-    padding: 25px 20px;
+    padding: 20px 20px;
     text-align: center;
     padding: 15px;
     font-size: 20px;
@@ -46,25 +46,26 @@ li a.active {
 .rightAlign button {
     font-size: 18px;
     padding: 10px 10px;
-    background-color: #fad87b;
+    background-color: #7ba7c9;
+    color: white;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .rightAlign button:hover {
-    background-color: #242222;
-    color: #ffe18f;
+    background-color: #ffffff;
+    color: #044062;
 }
-/* ---------------- inverted --------------- */
+/* ---------------------------- inverted --------------------------- */
 body.inverted .rightAlign button {
-    background-color: #a8d9f6;
+    background-color: #fad87b;
     color: #2a2a2a; 
 }
 
 body.inverted .rightAlign button:hover {
     background-color: #2a2a2a;
-    color: #a8d9f6;
+    color: #fad87b;
 }
 
 body.inverted {
@@ -74,7 +75,7 @@ body.inverted {
 
 body.inverted li a.active {
     color: #2a2a2a;
-    background-color: #a8d9f6;
+    background-color: #fad87b;
 }
 
 body.inverted ul {
@@ -84,7 +85,7 @@ body.inverted li a {
     color: #f8f8f8;
 }
 body.inverted li a:hover:not(.active) {
-    color: #ffe18f;
+    color: #81bfe3;
     background-color: #181717;
 }
 
@@ -92,15 +93,34 @@ body.inverted footer {
     background-color: #181717;
 }
 
-/* ---------------- end inverted ------------ */
+/* -------------------------------- end inverted ------------------------------ */
 
 body {
-    background-color: rgb(255, 237, 237);
+    background-color: rgb(245, 241, 233);
     color: black;
 }
 
+img {
+    border-radius: 50%;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: dodgerblue;
+    padding: 50px;
+    height: 100%;
+}
+.container > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
 footer {
-    background-color: #ffeac1;
+    background-color: #caddf8;
     text-align: center;
     padding: 30px;
     width: 100%; 
