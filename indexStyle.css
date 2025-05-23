@@ -89,6 +89,11 @@ body.inverted li a:hover:not(.active) {
     background-color: #181717;
 }
 
+body.inverted img {
+    border: 10px outset #fad87b;
+
+}
+
 body.inverted footer {
     background-color: #181717;
 }
@@ -101,23 +106,15 @@ body {
 }
 
 img {
+    width: 300px;      /* increase size */
+    height: auto;
+    margin-left: 0px;
+    margin-top: 20px;
     border-radius: 50%;
+    border: 10px inset #caddf8;
 }
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: dodgerblue;
-    padding: 50px;
-    height: 100%;
-}
-.container > div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    height: 100%;
-}
+
+
 
 footer {
     background-color: #caddf8;
@@ -125,3 +122,13 @@ footer {
     padding: 30px;
     width: 100%; 
 }
+
+.intro-section {
+    display: flex;
+    align-items: center; /* vertically centers the text next to the image */
+    margin: 30px; /* optional: spacing around the whole section */
+  }
+  
+  .intro-text {
+    margin-left: 40px; /* space between image and text */
+  }
