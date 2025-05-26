@@ -162,6 +162,10 @@ body.inverted .button2:hover {
     color: #181717;
   }
 
+body.inverted .typewriter h1{
+    color: #ff9b20
+}
+
 
 /* -------------------------------- end inverted ------------------------------ */
 
