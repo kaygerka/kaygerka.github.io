@@ -1,0 +1,108 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1; 
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    overflow: hidden;
+    border: 0 solid white;
+    background-color: #181717;
+    font-size: 20px;
+  }
+
+li a {
+    display: block;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+}
+li a:hover:not(.active) {
+    color: #81bfe3;
+    background-color: #181717;
+}
+li a.active {
+    color: #2a2a2a;
+    background-color: #fad87b;
+} 
+.rightAlign {
+    margin-left: auto;
+    padding: 20px 20px;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.rightAlign button {
+    font-size: 18px;
+    padding: 10px 10px;
+    background-color: #fad87b;
+    color: #2a2a2a; 
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rightAlign button:hover {
+    background-color: #2a2a2a;
+    color: #fad87b;
+}
+body {
+    background-color: #242222;
+    color: white;
+}
+
+footer {
+    background-color: #181717;
+    text-align: center;
+    padding: 30px;
+    width: 100%; 
+}
+
+/* ---------------------------- inverted --------------------------- */
+body.inverted .rightAlign button {
+    background-color: #7ba7c9;
+    color: white;
+}
+
+body.inverted .rightAlign button:hover {
+    background-color: #ffffff;
+    color: #044062;
+}
+
+body.inverted {
+    background-color: rgb(245, 241, 233);
+    color: black;
+}
+
+body.inverted li a.active {
+    color: rgb(255, 255, 255);
+    background-color: #7ba7c9;
+}
+
+body.inverted ul {
+    background-color: #caddf8;
+}
+body.inverted li a {
+    color: rgb(0, 0, 0);
+}
+body.inverted li a:hover:not(.active) {
+    color: #fa9907 ;
+    background-color: #caddf8;
+}
+
+body.inverted footer {
+    background-color: #caddf8;
+}
+/* -------------------------------- end inverted ------------------------------ */
