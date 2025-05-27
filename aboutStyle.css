@@ -69,6 +69,10 @@ footer {
     padding: 30px;
     width: 100%; 
 }
+li a.about {
+    color: #81bfe3;
+    background-color: #181717;
+}
 
 /* ---------------------------- inverted --------------------------- */
 body.inverted .rightAlign button {
@@ -103,6 +107,11 @@ body.inverted li a:hover:not(.active) {
 }
 
 body.inverted footer {
+    background-color: #caddf8;
+}
+
+body.inverted li a.about {
+    color: #fe9605 ;
     background-color: #caddf8;
 }
 /* -------------------------------- end inverted ------------------------------ */
