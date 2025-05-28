@@ -72,6 +72,8 @@ footer {
 li a.project {
     color: #81bfe3;
     background-color: #181717;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
 
 /* ---------------------------- inverted --------------------------- */
@@ -113,5 +115,7 @@ body.inverted footer {
 body.inverted li a.project {
     color: #fe9605 ;
     background-color: #caddf8;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
 /* -------------------------------- end inverted ------------------------------ */
