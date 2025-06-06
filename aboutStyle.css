@@ -118,6 +118,35 @@ body.inverted li a.about {
     text-decoration-line: underline;
     text-decoration-style: wavy;
 }
+body.inverted .corral-wrapper {
+    background: hsl(57, 100%, 93%);
+}
+body.inverted .header {
+    background-color:rgb(245, 241, 233);
+}
+body.inverted .header h1 {
+    background: linear-gradient(120deg, #7ba7c9 100%, transparent 0%);
+    color: white;
+}
+body.inverted .photo-and-text {
+    background-color: #bfd0db;
+}
+body.inverted .about-text h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff4a0;
+    text-shadow:
+    0 0 5px #ffec7e,
+    0 0 10px #6fa0d3,
+    0 0 20px #466384,
+    0 0 40px #283645;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+body.inverted .kayli{
+    border: 6px solid #fbf5c3;
+}
+
 /* -------------------------------- end inverted ------------------------------ */
 .corral-wrapper {
     overflow: hidden;
@@ -175,11 +204,13 @@ body.inverted li a.about {
 }
 .corral-wrapper {
     grid-area: corral;
-    background: #e0f2ff;
-    border-radius: 8px;
+    background: #01070a;
+    border-radius: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 10px;
     text-align: center;
+    border-color: burlywood;
+    
 }
 .photo-and-text {
     grid-area: photo-and-text;
@@ -198,21 +229,36 @@ body.inverted li a.about {
     border-radius: 8px;
     object-fit: cover;
 }
-.about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
+
 @media (max-width: 768px) {
     .photo-and-text {
       grid-template-columns: 1fr;
     }
 }
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 100%; 
+}
+.about-text h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #d1ecff;
+    text-shadow:
+    0 0 5px #83caf3,
+    0 0 10px #5699c0,
+    0 0 20px #4c4d4e,
+    0 0 40px #333333;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+.about-text p {
+    font-size: 18px;
+}
 .kayli {
     width: 300px;
     height: auto;
-    border: 4px solid #555;
+    border: 4px solid #d1ecff;
     border-radius: 12px;
 }
