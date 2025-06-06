@@ -15,6 +15,7 @@
 </head>
 <body>
 <div class="content">
+<div class = "bar">
 <ul>
   <li><a class="active" href="index.html">Kayli Gerka</a></li>
   <li><a class="about" href="about.html">About me!</a></li>
@@ -23,6 +24,7 @@
   <li><a href="resume.pdf">Resume</a></li>
   <li class="rightAlign"><button onclick="toggleInvert()">Invert Colors!</button></li>
 </ul>
+</div>
 
   <div class="container">
     <div class="header">
@@ -72,12 +74,72 @@
         <img src="photos/disney.jpeg" class="kayli" alt="kayli" >
       </div>
       <div class="about-text">
-        <h2>Kayli Gerka</h2>
-        <p></p>
-        <p>Hometown: Fishers, Indiana</p>
-        <p>Attend: Fishers, Indiana</p>
-
+        <h2>About Me</h2>
+        <p>
+            Hi! I’m <strong>Kayli Gerka</strong>, a proud Boilermaker majoring in Computer Science and graduating in May 2027.
+            Whether I’m troubleshooting a tricky bug, designing a new website, or brainstorming my next big project, I’m happiest when I’m building something new...both online and off.
+        </p>
+      
+        <div class="accordion">
+            <button class="accordion-btn">Education </button>
+            <div class="accordion-panel">
+              <p>
+                <span class="edu-highlight2">Purdue University — Boiler Up!</span><br>
+                <span class="edu-highlight">B.S. in Computer Science</span> <span class="edu-date">(Expected May 2027)</span><br>
+                <span class="edu-highlight">Minor in Organizational Leadership</span> <br>
+                <span class="edu-highlight">Certificate of Applications in Data Science</span>
+              </p>
+              <p><strong><u>Relevant Coursework:</u></strong></p>
+              <ul>
+                <li>Systems Programming </li>
+                <li>Data Structures &amp; Algorithms</li>
+                <li>Computer Architecture</li>
+                <li>Object-Oriented Programming</li>
+                <li>Web Application Development</li>
+                <li>Discrete Math</li>
+              </ul>
+            </div>
+          
+            <button class="accordion-btn">Activities & Leadership </button>
+            <div class="accordion-panel">
+              <ul>
+                <li>Sigma Kappa Sorority (Beta Sigma Chapter) <span class="edu-date">(Sept 2024 – Present)</span></li>
+                <li>Computer Science Women’s Networking <span class="edu-date">(Sept 2023 – Present)</span></li>
+                <li>Girls Who Code Member – Purdue University <span class="edu-date">(Sept 2023 – Present)</span></li>
+                <li>Hackathons: InnovateHer, Mudsock</span></li>
+                <li>Lacrosse Captain – Fishers High School & Circle City Lacrosse Club</li>
+              </ul>
+            </div>
+          
+            <button class="accordion-btn">Job Experience </button>
+            <div class="accordion-panel">
+              <div class="job-entry">
+                <strong>Bell Nursery Retail Merchandiser</strong> — Noblesville, IN <span class="edu-date">(May 2024 – Aug 2024)</span><br>
+                <ul>
+                  <li>Unload shipments</li>
+                  <li>Stock and account for inventory</li>
+                  <li>Customer service</li>
+                </ul>
+              </div>
+              <div class="job-entry">
+                <strong>Woodland Country Club Pool Check-in</strong> — Carmel, IN <span class="edu-date">(May 2024 – Aug 2024)</span><br>
+                <ul>
+                  <li>Interact with and check in members</li>
+                  <li>Stock and wash towels</li>
+                </ul>
+              </div>
+              <div class="job-entry">
+                <strong>Dry Goods Sales Associate</strong> — Noblesville, IN <span class="edu-date">(June 2023 – Aug 2023)</span><br>
+                <ul>
+                  <li>Welcome and assist customers</li>
+                  <li>Operate cash register and answer phone calls</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -90,5 +152,19 @@
       document.body.classList.toggle('inverted');
     }
   </script>
+  <script>
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+
+        this.classList.toggle('active');
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    });
+    </script>
   </body>
   </html>
