@@ -169,6 +169,12 @@ body.inverted .job-entry strong {
 body.inverted .edu-date {
     color: #ff8400;
   }
+body.inverted .accordion-panel p{
+    color: black;
+}
+body.inverted .about-text p {
+    color:black;
+}
 /* -------------------------------- end inverted ------------------------------ */
 .corral-wrapper {
     overflow: hidden;
@@ -277,6 +283,8 @@ body.inverted .edu-date {
 }
 .about-text p {
     font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 .kayli {
     width: 300px;
@@ -287,7 +295,7 @@ body.inverted .edu-date {
 }
 .accordion {
     margin-top: 1.5em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Georgia', serif;
 
 }
 .accordion-btn {
@@ -319,28 +327,43 @@ body.inverted .edu-date {
     display: none;
     overflow: hidden;
 }
+.accordion-panel p{
+    color: rgb(181, 213, 255);
+}
+
 .accordion-panel ul {
     margin-left: 1.2em;
-    color: #fff;
+    color: #e5e5e5;
     font-size: 18px;
 }
 .job-entry {
     margin-bottom: 1em;
+    font-family: 'Georgia', serif;
+
 }
 .edu-highlight {
-    color: #bce1f7;
+    color: #ffffff;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     letter-spacing: 0.3px;
+    font-family: 'Georgia', serif;
+
 }
 .edu-highlight2 {
-    color: #f9fffd;
     font-weight: bold;
     font-size: 22px;
-    letter-spacing: 0.3px;
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #B28F41;
+    text-shadow: 
+      1px 1px 0 #000,
+      2px 2px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .job-entry strong {
-    color: #81bfe3;
+    color: rgb(181, 213, 255);;
     font-size: 20px;
 }
 .edu-date {
