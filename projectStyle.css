@@ -8,7 +8,7 @@ html, body {
     flex: 1; 
 }
   
-ul {
+.bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -189,6 +189,11 @@ body.inverted li a.project {
     font-size: 1.6rem;
     z-index: 1;
     position: relative;
+}
+.project-card li {
+    font-size: 15px;
+    color: black;
+
 }
 
 .project-card p {
