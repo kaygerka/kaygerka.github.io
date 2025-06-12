@@ -4,93 +4,112 @@
   <title>Kayli Gerka</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap & Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="projectStyle.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="content">
-<div class = "bar">
+  <div class="bar">
+    <ul>
+      <li><a class="active" href="index.html">Kayli Gerka</a></li>
+      <li><a href="about.html">About me!</a></li>
+      <li><a href="skill.html">Skills</a></li>
+      <li><a class="project" href="project.html">Projects</a></li>
+      <li><a href="resume.pdf">Resume</a></li>
+      <li class="rightAlign"><button onclick="toggleInvert()">Invert Colors!</button></li>
+    </ul>
+  </div>
 
-<ul>
-  <li><a class="active" href="index.html">Kayli Gerka</a></li>
-  <li><a href="about.html">About me!</a></li>
-  <li><a href="skill.html">Skills</a></li>
-  <li><a class="project" href="project.html">Projects</a></li>
-  <li><a href="resume.pdf">Resume</a></li>
-  <li class="rightAlign"><button onclick="toggleInvert()">Invert Colors!</button></li>
-</ul>
+  <section class="projects-section">
+    <h2>PROJECTS</h2>
+    <!-- Secondary Projects Nav -->
+    <nav class="projects-subnav">
+    <a href="#highlights"></i> Highlights</a>
+    <a href="#web-projects"></i> Web Projects</a>
+    <a href="#c-projects"></i> C Projects</a>
+    </nav>
+    
+    <div class="project-categories">
+      <!-- Highlights -->
+      <div class="category">
+      <h3 class="highlights"></i> Highlights</h3>
+      </div>
+      <!-- Web Projects -->
+      <div class="category">
+        <h3 id="web-projects"> Web Projects (HTML/CSS/JavaScript)</h3>
+          <div class="projects-grid">
+          <div class="project-card">
+            <h4>Portfolio Website</h4>
+            <p>Built a responsive portfolio using HTML, CSS, and JavaScript.</p>
+            <a href="https://yourprojectlink.com">View Project</a>
+          </div>
+          <div class="project-card">
+            <h4>Tic-Tac-Toe...Basic</h4>
+            <p>Create Tic-Tac-Toe using JavaScript, CSS, and HTML.</p>
+            <ul>
+              <li><b>DOM Manipulation:</b> Element creation, attachment, deletion, mutation</li>
+              <li><b>Event Listeners:</b> Element/window events</li>
+              <li><b>Document Selection:</b> Single/multi-selector</li>
+            </ul>
+            <a href="https://github.com/kaygerka/basic-tictactoe">View Code</a>
+            <a href="https://kaygerka.github.io/basic-tictactoe/">View Project</a>
+          </div>
+          <div class="project-card">
+            <h4>Tic-Tac-Toe...JS Frameworks</h4>
+            <p>Create Tic-Tac-Toe using JS frameworks.</p>
+            <ul>
+              <li><b>Components:</b> Usage, nesting, props, mounting, destroying</li>
+              <li><b>Reactivity:</b> States, effects, derived values, DOM updates</li>
+            </ul>
+            <a href="https://github.com/kaygerka/tictactoe-js-frameworks">View Code</a>
+            <a href="https://kaygerka.github.io/tictactoe-js-frameworks/">View Project</a>
+          </div>
+          <div class="project-card">
+            <h4>Tic-Tac-Toe...React</h4>
+            <p>Create Tic-Tac-Toe using React.</p>
+            <ul>
+              <li><b>Components:</b> Nesting, props, custom hook</li>
+              <li><b>Reactivity:</b> States, effects</li>
+            </ul>
+            <a href="https://github.com/kaygerka/tictactoe-react">View Code</a>
+            <a href="https://kaygerka.github.io/tictactoe-react/">View Project</a>
+          </div>
+          <div class="project-card">
+            <h4>Tic-Tac-Toe...Express</h4>
+            <p>Create Tic-Tac-Toe using React and Express.</p>
+            <ul>
+              <li><b>Components:</b> Login, Signup</li>
+            </ul>
+            <a href="https://github.com/kaygerka/tictactoe-express">View Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- C Projects -->
+      <div class="category">
+        <h3 id="c-projects"></i> C Projects</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+
+          </div>
+          <!-- Add more C projects as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid text-center">
+    <p>© 2025 Kayli Gerka</p>
+  </footer>
 </div>
 
-<section class="projects-section">
-    <h2>PROJECTS</h2>
-    <div class="projects-grid">
-  
-      <div class="project-card">
-        <h3><b>Portfolio Website</b></h3>
-        <p>Built a responsive portfolio using HTML, CSS, and JavaScript.</p>
-        <a href="https://yourprojectlink.com">View Project</a>
-      </div>
-  
-      <div class="project-card">
-        <h3><b>Tic-Tac-Toe...Basic</b></h3>
-        <p> Create Tic-Tac-Toe using Javascript, CSS, and HTML. Utilizes...</p>
-        <ul>
-            <li><b>DOM Manipulation:</b> Element creation, attachment, deletion, and mutation</li>
-            <li><b>Event Listeners:</b> Element-attached event and Window-attached event</li>
-            <li><b>Document Selection:</b> single selector and multi-selector</li>
-        </ul>
-        <a href="https://github.com/kaygerka/basic-tictactoe">View Code</a>
-        <a href="https://kaygerka.github.io/basic-tictactoe/">View Project</a>
-      </div>
-  
-      <div class="project-card">
-        <h3><b>Tic-Tac-Toe...JS Frameworks</b></h3>
-        <p>Create Tic-Tac-Toe using Javascript, CSS, HTML and JS Frameworks. Utilizing ...</p>
-        <ul>
-            <li><b>Components:</b> Usage, Nesting, Props, Mounting, Destroying</li>
-            <li><b>Reactivity:</b> States, Effects, Derived Values, DOM Updates</li>
-        </ul>
-        <a href="https://github.com/kaygerka/tictactoe-js-frameworks">View Code</a>
-        <a href="https://kaygerka.github.io/tictactoe-js-frameworks/">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3><b>Tic-Tac-Toe...React</b></h3>
-        <p>Create Tic-Tac-Toe using Javascript, CSS, HTML and React. Utilizing ...</p>
-        <ul>
-            <li><b>Components:</b>  Nesting, Props, Custom Hook</li>
-            <li><b>Reactivity:</b> States, Effects</li>
-        </ul>
-        <a href="https://github.com/kaygerka/tictactoe-react">View Code</a>
-        <a href="https://kaygerka.github.io/tictactoe-react/">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <h3><b>Tic-Tac-Toe...Express</b></h3>
-        <p>Create Tic-Tac-Toe using Javascript, CSS, HTML, React, and Express. Utilizing ...</p>
-        <ul>
-            <li><b>Components:</b> Login, Signup</li>
-        </ul>
-        <a href="https://github.com/kaygerka/tictactoe-express">View Code</a>
-        <a href="tttreact.mov">View Project Video</a>
-      </div>
-  
-    </div>
-</section>
-
-<footer class="container-fluid text-center">
-    <p>© 2025 Kayli Gerka</p>
-</footer>
-    
 <script>
-    function toggleInvert() {
-      document.body.classList.toggle('inverted');
+function toggleInvert() {
+  document.body.classList.toggle('inverted');
 }
 </script>
 </body>
