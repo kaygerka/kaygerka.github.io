@@ -257,3 +257,9 @@ body.inverted li a.project {
     color: #000000;
     transform: translateY(-2px) scale(1.05);
   }
+  .project-categories h3 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+  }
