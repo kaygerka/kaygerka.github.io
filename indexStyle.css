@@ -165,6 +165,26 @@ body.inverted .button2:hover {
 body.inverted .typewriter h1{
     color: #ff9b20
 }
+body.inverted .neon-pulse {
+    background: rgb(245, 241, 233);
+    border: 2px solid rgb(71, 65, 113);
+    box-shadow: 0 0 10px rgb(71, 65, 113);
+    overflow: visible;
+}
+body.inverted .neon-pulse::before,
+body.inverted .neon-pulse::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 2px solid rgb(71, 65, 113);
+    border-radius: inherit;
+    animation: pulseOut 2s ease-out infinite;
+    opacity: 0;
+}
+body.inverted .neon-pulse::after {
+    animation-delay: 1s;
+}
+
 
 
 /* -------------------------------- end inverted ------------------------------ */
@@ -228,11 +248,13 @@ footer {
     color:#81bfe3;
     font-size: 25px;
     margin-left: 15px;
-
 }
 
 .icon a:hover {
     color: #fa9907;          
+}
+.icon .linkedin {
+    margin-right: 45px;
 }
 
 
@@ -268,6 +290,56 @@ footer {
   
 @keyframes blink {
     50% { border-color: transparent }
+}
+.btn {
+    position: relative;
+    padding: 1.5rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    min-width: 200px;
+    z-index: 1;
+}
+  
+.neon-pulse {
+    background: #242222;
+    border: 2px solid rgb(111, 219, 255);
+    box-shadow: 0 0 10px rgb(111, 219, 255);
+    overflow: visible;
+}
+.neon-pulse:hover {
+    border: 2px solid orange;
+    box-shadow: 0 0 10px orange;
+    overflow: visible;
+}  
+.neon-pulse::before,
+.neon-pulse::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 2px solid rgb(111, 219, 255);
+    border-radius: inherit;
+    animation: pulseOut 3s ease-out infinite;
+    opacity: 0;
+} 
+.neon-pulse::after {
+    animation-delay: 1.5s;
+}
+@keyframes pulseOut {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
 }
 
 
