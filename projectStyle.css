@@ -125,7 +125,7 @@ body.inverted li a.project {
     min-height: 100vh;
 }
 .projects-section h2 {
-    font-size: 60px;
+    font-size: 80px;
     color: #c8ffa3;
     animation: warp 3s infinite ease-in-out;
     margin-bottom: 30px;
@@ -253,13 +253,31 @@ body.inverted li a.project {
   
   .projects-subnav a:hover,
   .projects-subnav a:focus {
-    background-color: #e5ffd3;
+    background-color: #beff89;
     color: #000000;
     transform: translateY(-2px) scale(1.05);
   }
   .project-categories h3 {
-    font-size: 40px;
+    font-size: 45px;
     margin-top: 40px;
     margin-bottom: 40px;
     letter-spacing: 5px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif; /* Optional: futuristic font */
+    text-shadow:
+      0 0 5px rgb(245, 156, 205),
+      0 0 10px rgb(245, 156, 205),
+      0 0 20px rgb(9, 0, 5),
+      0 0 40px rgb(0, 0, 0),
+      0 0 80px rgb(0, 0, 0);
+    
+  }
+  @keyframes flicker {
+    0%, 100% { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+    50% { text-shadow: 0 0 2px #0ff, 0 0 4px #0ff, 0 0 8px #0ff; }
+  }
+  
+  .neon-title {
+    animation: flicker 1.5s infinite alternate;
   }
