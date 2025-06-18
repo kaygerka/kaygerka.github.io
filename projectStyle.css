@@ -118,6 +118,50 @@ body.inverted li a.project {
     text-decoration-line: underline;
     text-decoration-style: wavy;
 }
+body.inverted .project-card {
+    background: linear-gradient(120deg, #000000 60%, #454545 100%);
+    padding: 2.2rem 2rem 2rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 16px rgba(224, 221, 221, 0.25);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;    position: relative;
+    overflow: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body.inverted .split-text-container {
+    color: #358196
+}
+body.inverted .project-categories h3 {
+    color: #ffa928;
+    text-shadow:
+      0 0 25px #c97f00,
+      0 0 10px #f2e794,
+      0 0 20px rgb(255, 255, 255),
+      0 0 40px rgb(255, 255, 255),
+      0 0 80px rgb(255, 255, 255);
+}
+body.inverted .projects-subnav a:hover,
+body.inverted .projects-subnav a:focus {
+    background-color:#ffffff;
+    color: #ffbc48;
+    font-family: 'Orbitron', sans-serif; 
+    transform: translateY(-2px) scale(1.05);
+}
+body.inverted .projects-subnav a {
+    color: #ffffff;
+    background-color: #ffbc48;
+}  
+body.inverted .projects-subnav {
+    background-color: rgb(245, 241, 233);
+}
+body.inverted .project-card p {
+    color: #ffffff;
+}
+body.inverted .project-card h4 {
+    color: #aae1ff;
+}
+
+
 /* -------------------------------- end inverted ------------------------------ */
 .projects-section {
     padding: 4rem 2rem;

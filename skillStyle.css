@@ -153,6 +153,25 @@ body.inverted .box1 h2{
         0 0 10px rgb(255, 163, 3),
         0 0 40px rgb(255, 228, 183);
 }
+body.inverted .container > .header {
+    grid-area: header;
+    text-align: center;
+    color: #361e6a;
+    font-family: 'Gochi Hand', 'Fira Mono', 'monospace', monospace;
+    font-size: 2.5rem;
+    letter-spacing: 0.08em;
+    margin: 0.5em 0 1em 0;
+    text-transform: uppercase;
+    text-shadow:
+        0 0 6px #49229d,
+        0 0 12px #49229d,
+        0 0 24px #49229d,
+        0 0 48px #49229d,
+        0 0 96px #49229d;
+    animation: flicker 2.5s infinite alternate;
+    transition: color 0.3s, text-shadow 0.3s;
+    user-select: none;
+}
 /* -------------------------------- end inverted ------------------------------ */
 .container {
     display: grid;
@@ -170,23 +189,51 @@ body.inverted .box1 h2{
     padding: 20px;
     border-radius: 8px;
 }
+
 .container > .header {
     grid-area: header;
     text-align: center;
-    color: rgb(182, 150, 252);
-    text-shadow: 
-        0 0 5px rgb(182, 150, 252),
-        0 0 10px rgb(182, 150, 252),
-        0 0 40px rgb(182, 150, 252);
-    animation: flicker 2s infinite alternate;
-    font-family: monospace;
-
+    color: #b696fc;
+    font-family: 'Gochi Hand', 'Fira Mono', 'monospace', monospace;
+    font-size: 2.5rem;
+    letter-spacing: 0.08em;
+    margin: 0.5em 0 1em 0;
+    text-transform: uppercase;
+    text-shadow:
+        0 0 6px #b696fc,
+        0 0 12px #b696fc,
+        0 0 24px #a06cf6,
+        0 0 48px #cbb2fe,
+        0 0 96px #b696fc;
+    animation: flicker 2.5s infinite alternate;
+    transition: color 0.3s, text-shadow 0.3s;
+    user-select: none;
 }
+
 @keyframes flicker {
-    0% { opacity: 1 }
-    50% { opacity: 0.5 }
-    100% { opacity: 1 }
-}  
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 6px #b696fc,
+            0 0 12px #b696fc,
+            0 0 24px #a06cf6,
+            0 0 48px #cbb2fe,
+            0 0 96px #34147a;
+    }
+    20%, 22%, 24%, 55% {
+        opacity: 0.7;
+        text-shadow:
+            0 0 2px #b696fc,
+            0 0 4px #a06cf6,
+            0 0 8px #cbb2fe;
+    }
+    70% {
+        opacity: 0.9;
+        text-shadow:
+            0 0 12px #b696fc,
+            0 0 24px #a06cf6;
+    }
+} 
 .container > .header h1 {
     font-size: 70px;
     margin: 0;
@@ -197,7 +244,7 @@ body.inverted .box1 h2{
 }
 .box1 h2 {
     text-align: center;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif; 
     text-shadow: 
     0 0 5px rgb(125, 199, 245),
     0 0 10px rgb(125, 199, 245),
@@ -232,13 +279,12 @@ body.inverted .box1 h2{
     font-weight: bold;
 }
 
-
 .box2 {
     grid-area: box2;
 }
 .box2 h2 {
     text-align: center;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif; 
     text-shadow: 
     0 0 5px rgb(125, 199, 245),
     0 0 10px rgb(125, 199, 245),
@@ -278,7 +324,7 @@ body.inverted .box1 h2{
 }
 .box3 h2 {
     text-align: center;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif; 
     text-shadow: 
     0 0 5px rgb(125, 199, 245),
     0 0 10px rgb(125, 199, 245),
@@ -291,7 +337,7 @@ body.inverted .box1 h2{
 }
 .box4 h2 {
     text-align: center;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif; 
     color: rgb(255, 255, 255);
     text-shadow: 
     0 0 5px rgb(125, 199, 245),

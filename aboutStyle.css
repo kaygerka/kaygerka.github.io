@@ -175,6 +175,12 @@ body.inverted .accordion-panel p{
 body.inverted .about-text p {
     color:black;
 }
+body.inverted .interests strong{
+    color: #482968;
+}
+body.inverted .interests {
+    color: black;
+}
 /* -------------------------------- end inverted ------------------------------ */
 .corral-wrapper {
     overflow: hidden;
@@ -339,8 +345,8 @@ body.inverted .about-text p {
 .job-entry {
     margin-bottom: 1em;
     font-family: 'Georgia', serif;
-
 }
+
 .edu-highlight {
     color: #ffffff;
     font-weight: bold;
@@ -370,4 +376,14 @@ body.inverted .about-text p {
     color: #fad87b;
     font-size: 0.95em;
     margin-left: 6px;
-  }
+}
+.interests strong{
+    font-size: 19px;
+    color: rgb(167, 218, 255);
+
+}
+.interests {
+    font-size: 19px;
+    color: white;
+
+}
