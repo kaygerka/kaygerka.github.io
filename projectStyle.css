@@ -126,12 +126,11 @@ body.inverted li a.project {
 }
 .projects-section h2 {
     font-size: 80px;
-    color: #c8ffa3;
+    color: #ffbc48;
     animation: warp 3s infinite ease-in-out;
     margin-bottom: 30px;
     font-family: 'Poppins', cursive;
 }
-
 @keyframes warp {
     0% { letter-spacing: 0px; transform: scale(1); }
     50% { letter-spacing: 5px; transform: scale(1.1); }
@@ -145,7 +144,6 @@ body.inverted li a.project {
     margin: 0 auto;
     
 }
-
 .project-card {
     background: linear-gradient(120deg, #f8f6f1 60%, #f1e7d6 100%);
     padding: 2.2rem 2rem 2rem 2rem;
@@ -156,7 +154,6 @@ body.inverted li a.project {
     overflow: hidden;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .project-card::before {
     content: "";
     position: absolute;
@@ -182,16 +179,13 @@ body.inverted li a.project {
 }
 .project-card h4 {
     margin-top: 0;
-    color: #B28F41;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0cc2bf;
+    font-family:Impact, fantasy;
+    letter-spacing: 2px;
     font-size: 25px;
     z-index: 1;
     position: relative;
     text-align: center;
-}
-.project-card li {
-    font-size: 15px;
-    color: black;
 }
 .project-card p {
     color: #353535;
@@ -199,12 +193,15 @@ body.inverted li a.project {
     line-height: 1.6;
     z-index: 1;
     position: relative;
+    font-size: 15px;
+    font-family: georgia, serif;
 }
 .project-card a {
     display: inline-block;
+    text-align: center;
     padding: 0.5rem 1.3rem;
-    background: linear-gradient(90deg, #B28F41 70%, #927437 100%);
-    color: #fff;
+    background: linear-gradient(90deg, #ffdb8e 70%, #ffc757 100%);
+    color: #525252;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
@@ -216,7 +213,7 @@ body.inverted li a.project {
     position: relative;
 }
 .project-card a:hover {
-    background: linear-gradient(135deg, #927437, #B28F41);
+    background: linear-gradient(135deg, #ffc757, #ffdb8e);
     transform: scale(1.05);
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
 }
@@ -229,9 +226,8 @@ body.inverted li a.project {
     border-radius: 12px;
     padding: 1rem 0;
   }
-  
-  .projects-subnav a {
-    color: rgb(179, 58, 90);
+.projects-subnav a {
+    color: #ffbc48;
     background-color: white;
     font-family: 'Orbitron', sans-serif; 
     font-weight: 50px;
@@ -243,17 +239,16 @@ body.inverted li a.project {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 40px;
-  }
-  
-  .projects-subnav a:hover,
-  .projects-subnav a:focus {
-    background-color:rgb(179, 58, 90);
+    margin-bottom: 20px;
+}  
+.projects-subnav a:hover,
+.projects-subnav a:focus {
+    background-color:#ffbc48;
     color: #ffffff;
     font-family: 'Orbitron', sans-serif; 
     transform: translateY(-2px) scale(1.05);
-  }
-  .project-categories h3 {
+}
+.project-categories h3 {
     font-size: 45px;
     margin-bottom: 40px;
     margin-top: 90px;
@@ -262,18 +257,60 @@ body.inverted li a.project {
     text-align: center;
     font-family: 'Orbitron', sans-serif; 
     text-shadow:
-      0 0 5px #c8ffa3,
-      0 0 10px rgb(179, 58, 90),
+      0 0 25px #ffa200,
+      0 0 10px #94f2db,
       0 0 20px rgb(9, 0, 5),
       0 0 40px rgb(0, 0, 0),
       0 0 80px rgb(0, 0, 0);
-    
-  }
-  @keyframes flicker {
+}
+@keyframes flicker {
     0%, 100% { text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
     50% { text-shadow: 0 0 2px #0ff, 0 0 4px #0ff, 0 0 8px #0ff; }
-  }
+}
   
-  .neon-title {
+.neon-title {
     animation: flicker 1.5s infinite alternate;
-  }
+}
+.split-text-container {
+    display: flex;
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #94f2db;
+    overflow: hidden;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Poppins', cursive;
+}
+.text-part {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.text-part.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
